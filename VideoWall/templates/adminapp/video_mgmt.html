@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+{% extends "adminapp/base.html" %}
+{% block body_block %}
+{% load static %}
+<h1>VideoWall - {{header}}</h1>
+<hr>
+<h3>
+Please upload a new video file! </h3><br>
+    <!-- Upload Modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Upload asset
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="POST" enctype="multipart/form-data">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {{ form.as_p }}
+                    {% csrf_token %}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Modal -->
+    <!-- Successful submit modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <h3>Successful Upload!</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if successful_submit %}
+    <script type="text/javascript">
+        var my_modal = new bootstrap.Modal(document.getElementById('exampleModalCenter'), { keyboard: true });
+        my_modal.show();
+    </script>
+{% endif %}
+
+
+
+    <!-- End Successful submit modal -->
+<br>
+<small>Supported file formats: mp4</small>
+<hr />
+
+<div class="container">
+    <h2>Asset List</h2>
+    {% if asset_list %}
+    <ul>
+        {% for asset in asset_list %}
+            <li>
+                {{ asset.name }} - {{ asset.created }} - {{ asset.creator }}
+            </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <h3>No assets found!</h3>
+    {% endif %}
+
+</div>
+
+
+
+
+
+
+
+{% endblock  %}

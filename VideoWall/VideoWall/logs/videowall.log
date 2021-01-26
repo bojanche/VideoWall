@@ -1,0 +1,71 @@
+Watching for file changes with StatReloader
+"GET /adminapp/ HTTP/1.1" 200 163
+D:\python\VideoWall\VideoWall\adminapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /adminapp/ HTTP/1.1" 200 163
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2033
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2084
+Not Found: /
+"GET / HTTP/1.1" 404 2033
+Not Found: /
+"GET / HTTP/1.1" 404 2033
+Not Found: /
+"GET / HTTP/1.1" 404 2033
+"GET /adminapp HTTP/1.1" 301 0
+"GET /adminapp/ HTTP/1.1" 200 163
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /adminapp/ HTTP/1.1" 200 163
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/adminapp/1.jpg HTTP/1.1" 404 1668
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+Not Found: /adminapp/images/1.jpg
+"GET /adminapp/images/1.jpg HTTP/1.1" 404 2175
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+Not Found: /1.jpg
+"GET /1.jpg HTTP/1.1" 404 2066
+"GET /static/1.jpg HTTP/1.1" 404 1641
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+"GET /static/images/1.jpg HTTP/1.1" 404 1662
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2084
+"GET /static/adminapp HTTP/1.1" 404 1650
+"GET /adminapp HTTP/1.1" 301 0
+"GET /adminapp/ HTTP/1.1" 200 163
+"GET /adminapp/ HTTP/1.1" 200 214
+"GET /static/adminapp/images/1.jpg HTTP/1.1" 404 1689
+D:\python\VideoWall\VideoWall\VideoWall\settings.py changed, reloading.
