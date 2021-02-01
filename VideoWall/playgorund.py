@@ -35,7 +35,6 @@ out_stream_low = ffmpeg.filter(in_stream,
                                                       hls_time=6,
                                                       hls_list_size=0,
                                                       vcodec='libx265',
-                                                      preset='slow',
                                                       maxrate='500k',
                                                       bufsize='1000k',
                                                       crf=28, **{'qscale:v': 3, 'b:v': '500k'})
