@@ -36,3 +36,7 @@ def video_mgmt(request):
         form = FileUpload()
     return render(request, 'adminapp/video_mgmt.html', {'header': 'Video Management', 'title': 'Video Mangement',
                                                         'form': form, 'asset_list': asset_list})
+
+def test_player(request):
+    # logger.error('Something went wrong')
+    return render(request, 'adminapp/TestPlayer.html', {'header': 'Test Player'})

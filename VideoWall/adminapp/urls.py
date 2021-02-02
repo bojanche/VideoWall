@@ -8,4 +8,5 @@ app_name = 'adminapp'
 urlpatterns = [
     path('', views.index, name='index'),
     path('videomgmt', views.video_mgmt, name='videomgmt'),
+    path('testplayer', views.test_player, name='testplayer'),
 ]
