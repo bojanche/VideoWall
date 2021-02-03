@@ -2,6 +2,7 @@
 from django.urls import path
 from adminapp import views
 
+
 # Template tagging
 app_name = 'adminapp'
 

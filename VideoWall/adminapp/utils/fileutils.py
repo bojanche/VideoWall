@@ -4,7 +4,7 @@ import os
 
 
 class FileUtils:
-    UPLOAD_DIR = settings.FILE_UPLOAD_DIR
+    UPLOAD_DIR = settings.MEDIA_ROOT
 
     @classmethod
     def upload_file(cls, file_name, f):

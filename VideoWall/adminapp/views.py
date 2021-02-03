@@ -4,6 +4,9 @@ import logging
 from adminapp.forms import FileUpload
 from .utils.fileutils import FileUtils
 from adminapp.models import Asset
+from django.conf import settings
+
+import os
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +40,9 @@ def video_mgmt(request):
     return render(request, 'adminapp/video_mgmt.html', {'header': 'Video Management', 'title': 'Video Mangement',
                                                         'form': form, 'asset_list': asset_list})
 
+
 def test_player(request):
     # logger.error('Something went wrong')
-    return render(request, 'adminapp/TestPlayer.html', {'header': 'Test Player'})
+    file = os.path.join(settings.MEDIA_URL, 'pitch', 'low', 'pitch.m3u8')
+    print(file)
+    return render(request, 'adminapp/TestPlayer.html', {'header': 'Test Player', 'filename': file})

@@ -24,8 +24,11 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 #LOG_FILE = os.path.join(BASE_DIR, 'logs', 'videowall.log')
 
-FILE_UPLOAD_DIR = os.path.join(BASE_DIR, 'storage')
+#DEFAULT_FILE_STORAGE = os.path.join(BASE_DIR, 'storage')
 COMPANY = "UnaSoft"
+
+MEDIA_URL = '/storage/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'storage')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -75,6 +78,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
